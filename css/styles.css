@@ -663,15 +663,15 @@ img {
 }
 
 /* -------footer form--------- */
-.footer .form {
+.footer-form {
   margin-left: auto;
 }
 
-.form .input-wrap {
+.footer-form .input-wrap {
   display: flex;
 }
 
-.form .input-mail {
+.footer-form .input-mail {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -684,7 +684,7 @@ img {
   margin-right: 12px;
 }
 
-.form .input-mail::placeholder {
+.footer-form .input-mail::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -692,7 +692,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form .button {
+.footer-form .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -715,7 +715,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.form .button::after {
+.footer-form .button::after {
   content: '';
   width: 24px;
   height: 24px;
