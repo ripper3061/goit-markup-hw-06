@@ -221,6 +221,32 @@ img {
   margin-bottom: 30px;
 }
 
+/* кнопка в индекс */
+.hero-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  cursor: pointer;
+
+  min-width: 200px;
+  height: 50px;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  transition: background-color 250ms var(--animation-function);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+
 /* other sections styles */
 .section-title {
   color: var(--secondary-title-color);
@@ -439,6 +465,35 @@ img {
   margin-left: 8px;
 }
 
+/* кнопки в портфолио */
+.btn-projects .button {
+  display: inline-block;
+  background-color: var(--bcg-button-color);
+  color: var(--secondary-title-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+
+  padding: 6px 22px;
+  border: 0px;
+  border-radius: 4px;
+
+  transition: background-color 250ms var(--animation-function),
+    color 250ms var(--animation-function),
+    box-shadow 250ms var(--animation-function);
+}
+
+.btn-projects .button:hover,
+.btn-projects .button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .projects-section-title {
   display: flex;
   flex-wrap: wrap;
@@ -607,17 +662,47 @@ img {
   border-radius: 50%;
 }
 
-/* buttons */
+/* -------footer form--------- */
+.footer .form {
+  margin-left: auto;
+}
 
-/* кнопка в индекс */
-.hero-button {
-  display: inline-block;
+.form .input-wrap {
+  display: flex;
+}
+
+.form .input-mail {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  padding: 15px 16px;
+
+  width: 358px;
+
+  margin-right: 12px;
+}
+
+.form .input-mail::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
 
@@ -627,41 +712,17 @@ img {
   border-radius: 4px;
   padding: 10px 32px;
 
-  transition: background-color 250ms var(--animation-function);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
-}
+.form .button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 
-/* кнопки в портфолио */
-.button {
-  display: inline-block;
-  background-color: var(--bcg-button-color);
-  color: var(--secondary-title-color);
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  cursor: pointer;
-
-  padding: 6px 22px;
-  border: 0px;
-  border-radius: 4px;
-
-  transition: background-color 250ms var(--animation-function),
-    color 250ms var(--animation-function),
-    box-shadow 250ms var(--animation-function);
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-image: url('../images/icon-send.svg');
+  background-size: contain;
 }
 
 /* --------BACKDROP------- */
