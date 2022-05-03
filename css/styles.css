@@ -721,7 +721,12 @@ img {
   transition: background-color 250ms var(--animation-function);
 }
 
-.footer-form .button::after {
+.footer-button-icon {
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+}
+
+/* .footer-form .button::after {
   content: '';
   width: 24px;
   height: 24px;
@@ -729,7 +734,7 @@ img {
 
   background-image: url('../images/icon-send.svg');
   background-size: contain;
-}
+} */
 
 .footer-form .button:hover,
 .footer-form .button:focus {
