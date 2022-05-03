@@ -687,6 +687,10 @@ img {
   letter-spacing: 0.03em;
 }
 
+.footer-form .input-mail:focus-within {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .footer-form .input-mail::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -716,6 +720,8 @@ img {
   padding: 10px 32px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms var(--animation-function);
 }
 
 .footer-form .button::after {
@@ -726,6 +732,11 @@ img {
 
   background-image: url('../images/icon-send.svg');
   background-size: contain;
+}
+
+.footer-form .button:hover,
+.footer-form .button:focus {
+  background-color: #188ce8;
 }
 
 /* --------BACKDROP------- */
@@ -761,7 +772,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
   padding: 40px;
 
@@ -788,6 +799,13 @@ img {
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transition: fill 250ms var(--animation-function);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--accent-color);
 }
 
 .modal-title {
@@ -812,6 +830,11 @@ img {
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline-color: transparent;
+}
+
+.input-modal:focus-within {
+  border: 1px solid var(--accent-color);
 }
 
 .modal-area {
@@ -821,7 +844,12 @@ img {
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline-color: transparent;
   resize: none;
+}
+
+.modal-area:focus-within {
+  border: 1px solid var(--accent-color);
 }
 
 .modal-area::placeholder {
@@ -853,4 +881,11 @@ img {
   padding: 10px 32px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms var(--animation-function);
+}
+
+.modal-form .button:hover,
+.modal-form .button:focus {
+  background-color: #188ce8;
 }
