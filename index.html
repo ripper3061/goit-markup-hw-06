@@ -426,7 +426,7 @@
             <input
               class="input-mail"
               type="email"
-              name="email"
+              name="footer-email"
               placeholder="E-mail"
             />
             <button class="button" type="submit">Подписаться</button>
@@ -443,6 +443,48 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form class="modal-form">
+
+          <div class="input-wrap">
+            <label class="modal-label" for="modal-name">Имя</label>
+            <input
+              class="input-modal name"
+              type="text"
+              name="modal-name"
+              id="modal-name"
+            />
+
+            <div class="input-modal-wrap">
+            <label class="modal-label" for="modal-tel">Телефон</label>
+            <input
+              class="input-modal tel"
+              type="tel"
+              name="modal-tel"
+              id="modal-tel"
+            />
+
+            <div class="input-wrap">
+            <label class="modal-label" for="modal-email">Почта</label>
+            <input
+              class="input-modal mail"
+              type="email"
+              name="modal-email"
+              id="modal-email"
+            />
+
+            <label class="modal-label" for="modal-area">Комментарий</label>
+            <textarea class="modal-area" name="modal-area" id="modal-area"  rows="10" placeholder="Введите текст"></textarea>
+
+
+            <label for="modal-radio"><p>Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></p></label>
+            <input type="radio" name="color" value="red" id="modal-radio" />
+
+            
+
+            <button class="button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
