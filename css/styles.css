@@ -828,15 +828,37 @@ img {
 }
 .input-modal {
   width: 100%;
-  padding: 11px 12px;
-  margin-bottom: 10px;
+  padding: 11px 32px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+
+  transition: border 250ms var(--animation-function);
 }
 
 .input-modal:focus-within {
   border: 1px solid var(--accent-color);
+}
+
+.input-modal-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-modal-wrap .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms var(--animation-function);
+}
+
+.icon.tel {
+  padding: 3px;
+}
+.input-modal-wrap:focus-within .icon {
+  fill: var(--accent-color);
 }
 
 .modal-area {
@@ -848,6 +870,8 @@ img {
   border-radius: 4px;
   outline: none;
   resize: none;
+
+  transition: border 250ms var(--animation-function);
 }
 
 .modal-area:focus-within {
