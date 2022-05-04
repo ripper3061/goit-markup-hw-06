@@ -854,10 +854,6 @@ img {
   transition: fill 250ms var(--animation-function);
 }
 
-.icon.tel {
-  padding: 3px;
-}
-
 .input-modal-wrap:focus-within .icon {
   fill: var(--accent-color);
 }
