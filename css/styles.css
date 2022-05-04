@@ -857,6 +857,7 @@ img {
 .icon.tel {
   padding: 3px;
 }
+
 .input-modal-wrap:focus-within .icon {
   fill: var(--accent-color);
 }
