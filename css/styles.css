@@ -687,7 +687,9 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
-
+.input-mail:focus-within {
+  border-color: #979797;
+}
 .footer-form .input-mail::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -886,6 +888,8 @@ img {
   margin-bottom: 30px;
 }
 .check-icon {
+  width: 16px;
+  height: 15px;
   fill: transparent;
 
   transition: fill 250ms var(--animation-function);
@@ -908,16 +912,16 @@ img {
   border-radius: 2px;
 
   transition: background-color 250ms var(--animation-function),
-    border 250ms var(--animation-function);
+    border-color 250ms var(--animation-function);
 }
 
 .input-check:checked + .check-text .icon-border {
   background-color: var(--accent-color);
-  border: 0px solid transparent;
+  border-color: transparent;
 }
 
 .input-check:checked + .check-text .check-icon {
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
 
 .visually-hidden {
