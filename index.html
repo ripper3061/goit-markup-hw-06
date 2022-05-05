@@ -498,12 +498,29 @@
             placeholder="Введите текст"
           ></textarea>
 
-          <input type="radio" name="color" value="red" id="modal-radio" />
-          <label for="modal-radio"
-            ><p>
-              Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a>
-            </p></label
-          >
+          <div class="modal-field">
+            <input
+              class="input-check visually-hidden"
+              type="checkbox"
+              name="politicy"
+              id="modal-check"
+            />
+            <label class="check-text" for="modal-check">
+              <span class="icon-border">
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <span>Соглашаюсь с рассылкой и принимаю</span>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="link"
+                >Условия договора</a
+              >
+            </label>
+          </div>
 
           <button class="button" type="submit">Отправить</button>
         </form>

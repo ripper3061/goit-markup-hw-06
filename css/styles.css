@@ -882,6 +882,62 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-field {
+  margin-bottom: 30px;
+}
+.check-icon {
+  fill: transparent;
+
+  transition: fill 250ms var(--animation-function);
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-text .icon-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--secondary-title-color);
+  border-radius: 2px;
+
+  transition: background-color 250ms var(--animation-function),
+    border 250ms var(--animation-function);
+}
+
+.input-check:checked + .check-text .icon-border {
+  background-color: var(--accent-color);
+  border: 0px solid transparent;
+}
+
+.input-check:checked + .check-text .check-icon {
+  fill: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.check-text .link {
+  color: var(--accent-color);
+  margin-left: 5px;
+}
+
 .modal-form .button {
   display: flex;
   align-items: center;
